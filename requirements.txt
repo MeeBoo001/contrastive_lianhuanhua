@@ -1,0 +1,6 @@
+kornia
+torchvision
+torch
+pandas
+scikit-learn
+matplotlib
