@@ -3,18 +3,6 @@
 This repository is a Proof of Concept (PoC) for analyzing Lianhuanhua using a visual presentation model built on contrastive learning principles.
 The project is structured to facilitate a step-by-step workflow from data preparation to result visualization.
 
-## Project Structure
-├── 1-annotation_generate.py # Script to generate annotations for Lianhuanhua dataset
-├── 2-fine-tuning.py # Fine-tuning the contrastive model with Lianhuanhua data
-├── 3-feature_extract.py # Feature extraction from the fine-tuned model
-├── 4-feature_cluster.py # Clustering features for analysis
-├── 5-results_visualise.py # Visualization of the results
-├── simclr/
-│ └── loss_fn.py # Loss function for SimCLR
-│ └── models.py # SimCLR model
-└── utils.py # Utility functions used across the project
-
-
 ## Getting Started
 
 To get started with this project, clone the repository and install the required dependencies.
