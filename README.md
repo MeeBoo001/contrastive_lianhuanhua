@@ -11,6 +11,7 @@ To get started with this project, clone the repository and install the required 
 
 - Python 3.x
 - Pip package manager
+
 ---
 ### Installation
 
@@ -29,6 +30,7 @@ pip install -r requirements.txt
 The data of covers of Lianhuanhua are available at https://drive.google.com/file/d/15uXnywDU9JgLUaLMAsLSYxnbacu65yM5
 
 You may need to download the data and unzip all images in `./data/`
+
 ---
 ### Usage
 Execute the scripts in the numerical order provided to perform the complete analysis:
@@ -59,6 +61,7 @@ python 5-results_visualise.py
 ```
 
 Each script can be run independently, provided that the previous steps have been completed.
+
 ---
 ### Sample Images from the Clusters
 Samples in each row are clustered into one cluster with K-means algorithm, with visual representation extracted from the trained SimCLR model. 
