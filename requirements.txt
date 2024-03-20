@@ -1,6 +1,7 @@
-kornia
-torchvision
-torch
-pandas
-scikit-learn
-matplotlib
+numpy==1.26.4
+kornia==0.7.0
+torchvision==0.17.0
+torch==2.2.0
+pandas==2.2.1
+scikit-learn>=1.4.0
+matplotlib==3.8.3

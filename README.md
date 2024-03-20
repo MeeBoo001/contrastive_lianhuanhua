@@ -9,7 +9,7 @@ To get started with this project, clone the repository and install the required 
 
 ### Prerequisites
 
-- Python 3.x
+- Python 3.10 or higher
 - Pip package manager
 
 ---
@@ -23,11 +23,13 @@ cd contrastive_lianhuanhua
 
 2. Install dependencies:
 ```bash
+python -m venv lhh_env
+source lhh_env/bin/activate
 pip install -r requirements.txt
 ```
 
 3. Download data:
-The data of covers of Lianhuanhua are available at https://drive.google.com/file/d/15uXnywDU9JgLUaLMAsLSYxnbacu65yM5
+The data of covers of Lianhuanhua are available at [here](https://drive.google.com/file/d/15uXnywDU9JgLUaLMAsLSYxnbacu65yM5).
 
 You may need to download the data and unzip all images in `./data/`
 
@@ -45,10 +47,15 @@ python 1-annotation_generate.py
 python 2-fine-tuning.py
 ```
 
+Note: If you do not have enough GPU resources to fine-tune the model,
+you can skip this step.
+
 3. Extract features from the model:
 ```bash
 python 3-feature_extract.py
 ```
+Note: If no fine-tuned model is found, the script will use a ResNet18 model
+pretrained on [ImageNet](https://image-net.org/) to extract visual features.
 
 4. Cluster extracted features for analysis:
 ```bash
